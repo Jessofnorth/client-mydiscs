@@ -8,4 +8,8 @@
   button {
     @apply border border-black rounded-xl px-3 py-1;
   }
+
+  a {
+    @apply text-blue-600 visited:text-purple-600 hover:text-black;
+  }
 }
