@@ -1,12 +1,10 @@
-import logo from './logo.png';
-
+import React from 'react';
+import Header from './components/Header';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="MyDiscs logo" />
-      </header>
-    </div>
+    <main>
+      <Header />  
+    </main>
   );
 }
 
