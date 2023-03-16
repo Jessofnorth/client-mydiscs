@@ -1,12 +1,14 @@
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import DiscCards from './components/DiscCards';
 function App() {
   return (
-    <main>
+    <div>
       <Header />  
+      <DiscCards />
       <Footer />
-    </main>
+    </div>
   );
 }
 
