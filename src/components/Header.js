@@ -5,7 +5,7 @@ import logo from '../logo.png';
 const Header = () => {
     return (
         <header className="shadow-md py-3">
-            <img className="m-auto max-h-16" src={logo} alt="MyDiscs Logo"  />
+            <img className="m-auto max-h-24" src={logo} alt="MyDiscs Logo"  />
         </header>
     );
 }

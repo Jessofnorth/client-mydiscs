@@ -4,7 +4,7 @@ import { AiFillCheckCircle, AiFillCloseCircle } from "react-icons/ai";
 // component for displaying each disc and its info
 const DiscCards = () => {
   return (
-    <div className="card p-4 bg-sky-900/20 max-w-fit max-h-fit m-2 shadow-md rounded-lg">
+    <article className="card p-4 bg-sky-900/20 max-w-fit max-h-fit m-4 shadow-md rounded-lg">
       <img
         className="rounded-full border-8 border-white shadow-xl"
         src="https://jess-mydiscs.azurewebsites.net/uploads/thumb_6wWtQrhc47A4sk3LhG2b231314693.jpg"
@@ -22,7 +22,7 @@ const DiscCards = () => {
         <p className="text-xl col-span-2 text-red-800 flex place-self-center"><AiFillCloseCircle size={30} className="pr-2" />Disc is not in bag</p>
 
       </div>
-    </div>
+    </article>
   );
 };
 

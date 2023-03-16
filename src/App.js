@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import DiscCards from './components/DiscCards';
+import Discs from './components/Discs';
 function App() {
   return (
     <div>
       <Header />  
-      <DiscCards />
+      <Discs />
       <Footer />
     </div>
   );
