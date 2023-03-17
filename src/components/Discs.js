@@ -23,6 +23,7 @@ const Discs = () => {
             `This is an HTTP error: The status is ${response.status}`
           );
         }
+        // set response to setDiscs to keep a copy of all discs and to setFilterDiscs to reset the filterd discs
         setDiscs(response.data);
         setFilterDiscs(response.data);
         setError(null);
@@ -105,7 +106,7 @@ const Discs = () => {
       })
     );
   };
-  // reset filter to all discs
+  // reset filter to all discs to full list of discs
   const filterAll = () => {
     setFilterDiscs(discs);
   };
@@ -184,6 +185,7 @@ const Discs = () => {
         {error && (
           <p className="text-red-600">{`There is a problem fetching the discs - ${error}`}</p>
         )}
+        {/* show error if filtering does not cointain any discs */}
         {filterdiscs.length === 0 ? (
           <p className="text-red-600">No discs found.</p>
         ) : (
