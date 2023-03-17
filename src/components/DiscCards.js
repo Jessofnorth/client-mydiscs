@@ -3,18 +3,18 @@ import { AiFillCheckCircle, AiFillCloseCircle } from "react-icons/ai";
 
 // component for displaying each disc and its info
 const DiscCards = (disc) => {
-  console.log(disc)
-
   return (
     <article className="card p-4 bg-sky-900/20 max-w-fit max-h-fit m-4 shadow-md rounded-lg">
       <img
         className="rounded-full border-8 border-white shadow-xl"
         src={disc.disc.imageName}
-        alt={"Disc: disc.name"}
+        alt={"Disc: " + disc.disc.name}
       />
       <div className="text-gray-700 pt-4 text-lg grid grid-cols-2 content-center text-center gap-2">
         <p className="text-2xl font-bold col-span-2">{disc.disc.name}</p>
-        <p className="text-lg font-bold col-span-2">{disc.disc.brand.brandName} - {disc.disc.category.categoryName}</p>
+        <p className="text-lg font-bold col-span-2">
+          {disc.disc.brand.brandName} - {disc.disc.category.categoryName}
+        </p>
         <p className="text-md col-span-2">Plastic: {disc.disc.plastic}</p>
         <p>
           Speed: <span className="font-bold">{disc.disc.speed}</span>
