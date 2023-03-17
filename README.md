@@ -1,7 +1,7 @@
 # MyDiscs - A React app
 
 This project is for the course Webdevelopment with .Net at Mid Sweden University.
-It's built with React, React router dom, Tailwind CSS and consumes an API. 
+It's built with React, React router dom, React icons, Axios, Tailwind CSS and consumes an API. 
 
 ## Links
 
